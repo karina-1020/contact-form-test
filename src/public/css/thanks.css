@@ -1,0 +1,33 @@
+body {
+    font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', sans-serif;
+    background-color: #fff;
+    text-align: center;
+    color: #7c6955;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 200px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+form {
+    margin-top: 30px;
+}
+
+button {
+    background-color: #7c6955;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    opacity: 0.8;
+}

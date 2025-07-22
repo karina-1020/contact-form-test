@@ -2,7 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\Contact;
 use Illuminate\Database\Seeder;
+use Database\Seeders\ContactsTableSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -13,6 +15,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        //contactsテーブルにダミーデータを登録（ファクトリを使用）
+        $this->call(ContactsTableSeeder::class);
+        //categoriesテーブルに5件のダミーデータを登録（シーダーファイル使用）
+        $this->call(CategoriesTableSeeder::class);
     }
 }

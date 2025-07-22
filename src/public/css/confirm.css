@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #4d4d4d;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #6d5b4d;
+}
+
+table {
+    width: 70%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #e5e5e5;
+}
+
+th {
+    background-color: #d9c3af;
+    font-weight: normal;
+    white-space: nowrap;
+    width: 30%;
+}
+
+td {
+    background-color: #fdfdfd;
+    width: 70%;
+}
+
+/* 送信・修正ボタンを横並びに中央配置 */
+.button-area {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.button-area form {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.submit-btn {
+    background-color: #7b6c61;
+    color: #fff;
+    padding: 10px 35px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    color: #7b6c61;
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+}

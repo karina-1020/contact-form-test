@@ -1,0 +1,104 @@
+body {
+    background-color: #f0eae2;
+    /* 淡いベージュ系の背景色 */
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    zoom: 80%;
+}
+
+/* ヘッダー全体のスタイル */
+.header {
+    display: flex;
+    /* 横並び */
+    justify-content: space-between;
+    /* 左右に配置 */
+    align-items: center;
+    /* 垂直方向中央揃え */
+    padding: 20px 40px;
+    background-color: #fff;
+    /* 白背景 */
+    border-bottom: 1px solid #ddd;
+    /* 下線 */
+}
+
+/* タイトル「FashionablyLate」のスタイル */
+.header h1 {
+    font-size: 28px;
+    color: #6b5b4c;
+    /* 渋めの茶色 */
+    margin: 0;
+}
+
+/* loginボタンのスタイル */
+.login-btn {
+    background-color: transparent;
+    border: 1px solid #d5c8ba;
+    /* 薄茶の枠線 */
+    padding: 4px 10px;
+    color: #d5c8ba;
+    /* 文字色も薄茶で統一 */
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+/* フォームの外枠（中央の白いボックス） */
+.register-container {
+    max-width: 400px;
+    /* 幅を固定 */
+    margin: 60px auto;
+    /* 上下に余白、中央寄せ */
+    background-color: #fff;
+    /* 白背景 */
+    padding: 40px;
+    border-radius: 8px;
+    /* 角を丸める */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    /* うっすら影をつける */
+    text-align: left;
+}
+
+/* Register見出し */
+.register-container h2 {
+    text-align: center;
+    color: #6b5b4c;
+    margin-bottom: 30px;
+}
+
+/* 各フォーム項目の余白 */
+form div {
+    margin-bottom: 20px;
+}
+
+/* ラベル（項目名）のスタイル */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #6b5b4c;
+    font-weight: bold;
+}
+
+/* 入力フィールドのスタイル */
+input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #f4f4f4;
+    /* グレー背景で柔らかい印象に */
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* 登録ボタンのスタイル */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #6b5b4c;
+    /* 渋い茶色背景 */
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

@@ -1,0 +1,251 @@
+/* =============================
+   管理画面 - 基本スタイル
+============================= */
+
+/* タイトル（ロゴや見出し） */
+h1 {
+    font-size: 32px;
+    color: #6b5b4c;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    color: #6b5b4c;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* 検索フォーム全体 */
+form.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* 入力欄 */
+input[type="text"],
+select,
+input[type="date"] {
+    padding: 8px;
+    border: 1px solid #d5c8ba;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* 名前やメール欄  */
+.input-name {
+    width: 300px;
+}
+
+/* 性別欄  */
+.input-gender {
+    width: 90px;
+}
+
+/* お問い合わせ種類  */
+.input-category {
+    width: 180px;
+}
+
+/* 日付欄  */
+.input-date {
+    width: 100px;
+}
+
+/* 各ボタン */
+button {
+    padding: 8px 14px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #7d6651;
+    color: white;
+}
+
+button.reset-button {
+    background-color: #d5c8ba;
+    color: white;
+}
+
+button.export-button {
+    background-color: #eee;
+    color: #333;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+/* テーブル全体 */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+thead {
+    background-color: #7d6651;
+    color: white;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+/* 詳細ボタン */
+.detail-button {
+    background-color: #f0eae2;
+    border: 1px solid #d5c8ba;
+    color: #7d6651;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+/* =============================
+   ページネーション（Bootstrapカスタム）
+============================= */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-item .page-link {
+    color: #5e4522;
+    border: 1px solid #d5c8ba;
+    background-color: #fff;
+}
+
+.page-item.active .page-link {
+    background-color: #5e4522;
+    border-color: #5e4522;
+    color: #fff;
+}
+
+.page-item .page-link:hover {
+    background-color: #f0eae2;
+    border-color: #c8b6a6;
+    color: #5e4522;
+}
+
+/* ヘッダー全体のデザイン（ロゴ＋ログアウトボタン） */
+.header {
+    display: flex;
+    justify-content: center;
+    /* 中央寄せにする */
+    align-items: center;
+    position: relative;
+    /* logoutボタンの位置調整のために基準を作る */
+    padding: 20px 40px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+/* ロゴタイトルの見た目 */
+.header h1 {
+    font-size: 28px;
+    color: #6b5b4c;
+    margin: 0;
+}
+
+/* logoutボタンの配置とスタイル */
+.logout-button {
+    position: absolute;
+    /* 親（.header）の右上に配置 */
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 1px solid #d5c8ba;
+    /* 枠線：薄ベージュ */
+    color: #d5c8ba;
+    padding: 4px 10px;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* hover時の効果 */
+.logout-button:hover {
+    background-color: #f0eae2;
+}
+
+/* =============================
+   モーダルウィンドウ
+============================= */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 40px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 90%;
+}
+
+.close-btn{
+position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+}
+
+.delete-btn{
+background-color: #e74c3c;
+    /* 赤色 */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* =============================
+   エクスポート＋ページネーションの並び調整
+============================= */
+
+/* 全体をflexで横並びに */
+.export-pagination-wrapper {
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* ページネーションだけを右寄せ */
+.pagination {
+    margin: 10;
+    /* 上下余白なしに */
+}
